@@ -101,13 +101,18 @@ function App() {
       {/* DISTANCE: {state.distance}
       <button onClick={() => dispatch({ type: "distance"})} className="btn_distance">check</button> */}
       <div className="boatData">
-        <span className="gear">GEAR: {state.gear}</span>
-        <span className="speed">SPEED: {state.speed}</span>
+        
+      <div>
+         <button onClick={() => dispatch({ type: "gearUp" })} className="btn_GUp"> ➕</button>
+         <span className="gear">GEAR: {state.gear}</span>
+         <button onClick={() => dispatch({ type: "gearDown" })} className="btn_GDown"> ➖</button>
       </div>
-      <button onClick={() => dispatch({ type: "gearUp" })} className="btn_GUp">GEAR ➕</button>
-      <button onClick={() => dispatch({ type: "gearDown" })} className="btn_GDown">GEAR ➖</button>
-      <button onClick={() => dispatch({ type: "speedUp" })} className="btn_SUp"> SPEED ➕</button>
-      <button onClick={() => dispatch({ type: "speedDown" })} className="btn_SDown">SPEED ➖</button>
+       <div> 
+          <button onClick={() => dispatch({ type: "speedUp" })} className="btn_SUp"> ➕</button>
+          <span className="speed">SPEED: {state.speed}</span>
+          <button onClick={() => dispatch({ type: "speedDown" })} className="btn_SDown">➖</button>
+       </div>
+      </div>
     </div>
   );
 }

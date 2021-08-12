@@ -28,7 +28,7 @@ button {
     margin: 15px;
     border-radius: 50px;
     font-weight: bold;
-    width: 100px;
+    padding: 15px;
     cursor: pointer;
 }
 
@@ -46,25 +46,30 @@ button.btn_stop  {
    
 }
 
+
+.gear {
+    background: rgb(9, 5, 233);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.speed {
+    background: rgb(233, 5, 157);
+    padding: 8px;
+    border-radius: 12px;
+}
+
 button.btn_GUp, button.btn_GDown {
     border: solid 3px rgb(9, 5, 233);
     font-weight: bolder;
     background: white;
 }
-/* button.btn_GDown {
-    background: rgb(233, 134, 5);
-    font-weight: bolder;
-} */
 
 button.btn_SUp, button.btn_SDown {
     border: solid 3px rgb(233, 5, 157);
     font-weight: bolder;
     background: white;
 }
-/* button.btn_SDown {
-    background: rgb(156, 135, 17);
-    font-weight: bolder;
-} */
 
 .boatData {
     display: flex;
